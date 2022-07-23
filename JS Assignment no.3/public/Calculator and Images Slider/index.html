@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br>
+    <h1 align="center">Calculator</h1>
+    
+    <div class="container">
+        <div class="calculator">
+            <div>
+                <input type="text" class="screen" id="screen" disabled>
+            </div>
+            <div>
+                <div class="buttonsDiv">
+                    <button style="background-color:red ;" onclick="clearVal()">C</button>
+                    <button onclick="getBtnValue(1)">1</button>
+                    <button onclick="getBtnValue(2)">2</button>
+                    <button style="background-color: orange;" onclick="getBtnValue('+')">+</button>
+                    <button onclick="getBtnValue(3)">3</button>
+                    <button onclick="getBtnValue(4)">4</button>
+                    <button onclick="getBtnValue(5)">5</button>
+                    <button style="background-color: orange;" onclick="getBtnValue('-')">-</button>
+                    <button onclick="getBtnValue(6)">6</button>
+                    <button onclick="getBtnValue(7)">7</button>
+                    <button onclick="getBtnValue(8)">8</button>
+                    <button style="background-color: orange;" onclick="getBtnValue('/')">/</button>
+                    <button onclick="getBtnValue(9)">9</button>
+                    <button onclick="getBtnValue(0)">0</button>
+                    <button onclick="calculate()">=</button>
+                    <button style="background-color: orange;" onclick="getBtnValue('*')">*</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                    <!-- Slider -->
+
+    <h1 align="center">Carousel / Images Slider</h1>
+    <br><br>
+
+    <div class="slideshow-container" style="background-color:black ;">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../images/3.webp" style="width:100%; height: 600px;"  >
+          <div class="text">HTML</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../images/2.png" style="width:100%; height: 600px;">
+          <div class="text">Web Designing</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../images/1.png" style="width:100%; height: 600px;">
+          <div class="text">Big Data</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!-- Step 1: UI
+Step 2: Get button value and show in Calculator screen
+step 3: calculate value ( Perform operation)
+step 4: Show the calculated value in screen   -->
